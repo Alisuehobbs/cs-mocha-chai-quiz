@@ -1,4 +1,6 @@
-function pokeSort(array, sortBy) {
+module.exports = {
+
+pokeSort: function(array, sortBy) {
   let properties = []
   let sortedPokeObjects = []
   for (var i = 0; i < array.length; i++) {
@@ -19,9 +21,9 @@ function pokeSort(array, sortBy) {
     }
   }
   return sortedPokeObjects
-}
+},
 
-let pokeArray = [{
+pokeArray: [{
   id: 4,
   name: 'charmander',
   weight: 12.3
@@ -38,5 +40,4 @@ let pokeArray = [{
   name: 'articuno',
   weight: 60.2
 }]
-
-console.log(pokeSort(pokeArray, 'name'));
+}
